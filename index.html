@@ -1,0 +1,116 @@
+<!-- Coding by CodingLab | www.codinglabweb.com -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <title>Dashboard Sidebar Menu</title> 
+</head>
+<body>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Agencies</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+
+                <ul class="menu-links">
+                    <a href="#">
+                    <li class="nav-link">
+                        <i class='bx bx-file icon'></i>
+                        <span class="text nav-text" input type ="button" onclick="CIA()">CIA</span>
+                    </a>
+                    </li>
+
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-user icon' ></i>
+                            <span class="text nav-text" input type ="button" onclick="FBI()">FBI</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text input type ="button" onclick="NSA()">NSA</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-pie-chart-alt icon' ></i>
+                            <span class="text nav-text" input type ="button" onclick="DIA()">DIA</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-cloud icon' ></i>
+                            <span class="text nav-text" input type ="button" onclick="USCBP()">USCBP</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+        <div class="text">Intelligence Report</div>
+        <div id="iframe-container"></div>
+
+        <script>
+        function CIA() {
+        var iframeContainer = document.getElementById('iframe-container');
+        iframeContainer.innerHTML = '<iframe src="./CIA.html" style="width: 100%; height: 1000px;"></iframe>';
+        }
+
+        function FBI() {
+        var iframeContainer = document.getElementById('iframe-container');
+        iframeContainer.innerHTML = '<iframe src="./FBI.html" style="width: 100%; height: 1000px;"></iframe>';
+        }
+
+        function NSA() {
+        var iframeContainer = document.getElementById('iframe-container');
+        iframeContainer.innerHTML = '<iframe src="./NSA.html" style="width: 100%; height: 1000px;"></iframe>';
+        }
+
+        function DIA() {
+        var iframeContainer = document.getElementById('iframe-container');
+        iframeContainer.innerHTML = '<iframe src="./DIA.html" style="width: 100%; height: 1000px;"></iframe>';
+        }
+
+        function USCBP() {
+        var iframeContainer = document.getElementById('iframe-container');
+        iframeContainer.innerHTML = '<iframe src="./USCBP.html" style="width: 100%; height: 1000px;"></iframe>';
+        }
+
+        </script>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
